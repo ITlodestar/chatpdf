@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Troy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+    let toggle = 0;
+    const boxes = document.querySelectorAll('.box');
+    const colors = ['#f94144', '#f8961e', '#f9c74f', '#90be6d'];
+
+    boxes.forEach((box, i) => {
+      box.style.backgroundColor = colors[i];
+    });
+    $(document).ready(function () {
+      $("#sidebarCollapse").click(function () {
+        if (!toggle) {
+          document.getElementById("sidebar").style.marginLeft = "-270px";
+          toggle = 1;
+        }
+        else {
+          document.getElementById("sidebar").style.marginLeft = "0px";
+          toggle = 0;
+        }
+      });
+    });
+  </script>
+</head>
+
+<header>
+  <div class="logo-container">
+    <img src="logo.png" alt="Logo" class="logo" />
+    <h1 class="website-name">
+      <span class="website-name-main">Project Management Co-Pilot</span><br />
+      <span class="website-name-secondary">Powered by AI</span>
+    </h1>
+  </div>
+  <nav class="top-nav">
+    <button class="btn btn-outline-primary rounded side-button">Option 1</button>
+  </nav>
+</header>
+
+<div class="main-container">
+  <aside class="side-panel" id="sidebar">
+    <div class="custom-menu">
+      <button type="button" id="sidebarCollapse" class="btn btn-primary">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+    <div>
+      <a href="home.html" class="nav-button"><i class="bi bi-house-fill"></i>Home</a>
+      <a href="analyse.html" class="nav-button"><i class="bi bi-speedometer"></i>Analyse</a>
+      <a href="translate.html" class="nav-button"><i class="bi bi-globe"></i>Translate</a>
+      <a href="email.html" class="nav-button"><i class="bi bi-envelope-plus-fill"></i>Create Email</a>
+    </div>
+  </aside>
+  <main class="main-panel text-center">
+    <h2>Analyse your Document</h2>
+    <p>
+      Here you can input your API key, select your document and ask questions and generate meaningful responses.
+    </p>
+    <div class="box-analyse">
+      <div class="box_a w-75">
+        <h4>PDF to chat implementation</h4>
+        <p>This is where we need integration with the PDF to chat application</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <p>&copy; 2023 Demo Site for personal use. All rights reserved.</p>
+</footer>
+</body>
+
+</html>

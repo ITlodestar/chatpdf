@@ -1,0 +1,261 @@
+:root {
+  /* Color palette */
+  --black: #000000ff;
+  --black-2: #000000ff;
+  --black-3: #000000ff;
+  --rich-black: #000019ff;
+  --federal-blue: #220655ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--federal-blue);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* background-image: url(gray.png); */
+  /* background-repeat: repeat; */
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.website-name {
+  font-size: 24px;
+}
+
+.top-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-button {
+  border: none;
+  color: rgba(255, 255, 255, 0.774);
+  padding: 10px 20px;
+  text-align: Left;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%
+}
+
+.nav-button:hover {
+  color: white;
+}
+
+.nav-button i {
+  margin-right: 15px;
+}
+
+#sidebar .custom-menu {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin-right: -20px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+#sidebar .custom-menu .btn.btn-primary {
+  border-color: transparent;
+  background: #3445b4;
+}
+
+#sidebar .custom-menu .btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#sidebar .custom-menu .btn i {
+  margin-left: 23px;
+}
+
+.main-container {
+  display: flex;
+}
+
+.side-panel {
+  min-width: 270px;
+  max-width: 270px;
+  background: #3445b4;
+  padding: 20px;
+  margin: 0%;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  position: relative;
+}
+
+.side-button {
+  background-color: var(--federal-blue);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%
+}
+
+.title {
+  font-family: 'Jost', sans-serif;
+  font-weight: 900;
+}
+
+.main-panel {
+  flex-grow: 1;
+  padding: 80px;
+  background: linear-gradient(126deg, rgb(185 215 249) 0%, rgb(235 239 250) 51%, rgb(156 181 247) 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% auto;
+  margin: 0%;
+  height: 100%;
+  border-top: 5px #83868c solid;
+}
+
+.main-panel h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+#sidebar  a i {
+  color: #44bef1;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 50px;
+}
+
+section:nth-child(odd) {
+  background-color: var(--federal-blue);
+  color: white;
+}
+
+section:nth-child(even) {
+  background-color: var(--rich-black);
+  color: white;
+}
+
+blockquote {
+  font-size: 20px;
+  font-style: italic;
+  padding: 20px;
+  background-color: var(--black);
+  color: var(--federal-blue);
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 20px;
+  background: #222b68;
+  color: white;
+  text-align: center;
+}
+
+.website-name {
+  font-size: 24px;
+  color: #12034e;
+  line-height: 1;
+}
+
+.website-name-main {
+  font-weight: bold;
+}
+
+.website-name-secondary {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.box-container {
+  justify-content: center;
+}
+
+.box {
+  color: white;
+  padding: 10px;
+}
+
+.box h4 {
+  color: #12034e;
+  margin-bottom: 0
+}
+
+.box>div {
+  border: 1px #8a8383 solid;
+  border-radius: 10px;
+  color: #83868c;
+  height: 100%;
+  padding-left: 8px;
+  padding-top: 8px;
+
+}
+
+
+.box-analyse {
+  display: flex;
+  justify-content: center;
+}
+
+.box_a {
+  width: 1000px;
+  height: 1000px;
+  background-image: url(small.png);
+  background-size: cover;
+  margin: 0 10px;
+  color: white;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  #sidebar {
+    margin-left: -270px;
+  }
+}

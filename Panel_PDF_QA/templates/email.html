@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Troy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      const boxes = document.querySelectorAll('.box');
+      const colors = ['#f94144', '#f8961e', '#f9c74f', '#90be6d'];
+
+      boxes.forEach((box, i) => {
+        box.style.backgroundColor = colors[i];
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <h1 class="website-name">
+          <span class="website-name-main">Project Management Co-Pilot</span><br />
+          <span class="website-name-secondary">Powered by AI</span>
+        </h1>
+      </div>
+      <nav class="top-nav">
+        <button class="side-button">Option 1</button>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <aside class="side-panel">
+        <a href="home.html" class="nav-button">Home</a>
+        <a href="analyse.html" class="nav-button">Analyse</a>
+        <a href="translate.html" class="nav-button">Translate</a>
+        <a href="email.html" class="nav-button">Create Email</a>
+      </aside>      
+      <main class="main-panel">
+        <h2>AI-Powered Personal Document Tool</h2>
+        <p>
+          Welcome to the Co-Pilot, an AI-powered tool designed
+          to help you with everyday tasks. The tool uses natural
+          language processing and machine learning algorithms to take in large
+          documents in PDF, Word, or text format and allows users to interrogate
+          and chat with the documents to get simple, meaningful responses. 
+        </p>
+
+        <h3>Key Features</h3>
+        <div class="box-container row">
+          <div class="box col-12 col-sm-5 col-md-3">
+            <h4>Natural Language Processing</h4>
+            <p>Our tool uses NLP to help users easily interact with large documents.</p>
+          </div>
+          <div class="box col-12 col-sm-5 col-md-3">
+            <h4>Machine Learning</h4>
+            <p>We use machine learning algorithms to analyze and understand the content of your documents, so you can
+              quickly find the information you need.</p>
+          </div>
+          <div class="box col-12 col-sm-5 col-md-3">
+            <h4>Chat-Based Interface</h4>
+            <p>Our tool features a chat-based interface, making it easy to ask questions and get answers.</p>
+          </div>
+          <div class="box col-12 col-sm-5 col-md-3">
+            <h4>Multiple File Formats Supported</h4>
+            <p>Our tool supports multiple file formats, including PDF, Word, and text files, so you can easily import your
+              documents.</p>
+          </div>
+        </div>
+        <h3>How It Works</h3>
+        <p>
+          The Document Co-Pilot is easy to use. Simply upload your
+          document, and our tool will analyze the content and make it available
+          for you to interact with. You can ask questions, search for specific
+          information, and get quick answers to your queries. Our chat-based
+          interface makes it easy to communicate with the tool and get the
+          information you need.
+        </p>
+
+        <h3>Get Started Today</h3>
+        <p>
+          Ready? Try the Co-Pilot today and see how it can help you work more efficiently and effectively.
+        </p>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Demo Site for personal use. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
