@@ -1,7 +1,0 @@
-langchain
-openai
-chromadb
-pypdf
-tiktoken
-panel
-notebook

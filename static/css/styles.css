@@ -150,9 +150,11 @@ header {
   margin-bottom: 20px;
 
 }
-#sidebar  a i {
+
+#sidebar a i {
   color: #44bef1;
 }
+
 h2 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -190,6 +192,13 @@ blockquote {
   background-color: var(--black);
   color: var(--federal-blue);
   margin-bottom: 20px;
+}
+
+#run {
+  display: flex;
+  /* align-content: center; */
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
@@ -246,16 +255,99 @@ footer {
 
 .box_a {
   width: 1000px;
-  height: 1000px;
-  background-image: url(small.png);
+  height: 700px;
+  background-size: cover;
+  background-color: #553da7;
   background-size: cover;
   margin: 0 10px;
   color: white;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 900px) {
   #sidebar {
     margin-left: -270px;
   }
+}
+
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+#drop-area.highlight {
+  border-color: purple;
+}
+
+p {
+  margin-top: 0;
+}
+
+.my-form {
+  margin-bottom: 10px;
+}
+
+#gallery {
+  margin-top: 10px;
+}
+
+#gallery img {
+  width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button:hover {
+  background: #ddd;
+}
+
+#fileElem {
+  display: none;
+}
+
+.file-input-item {
+  display: flex;
+  background-color: #3e424269;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.chat-message {
+  white-space: pre-wrap;
+  max-width: 500px;
+  border-radius: 8px;
+  padding: 6px 12px;
+  box-shadow: 0 0 3px #d1d2da;
+}
+
+.justify-content-end>.chat-message {
+  flex-direction: row-reverse;
+  background-color: #1777ff;
+  color: #fff;
+}
+
+.justify-content-start>.chat-message {
+  background-color: #f9f9fe;
+  color: #000000ba;
+}
+
+#answers {
+  max-height: 360px;
+  overflow-y: auto;
+  padding-bottom: 50px;
 }

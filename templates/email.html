@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Troy</title>
-    <link rel="stylesheet" href="styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/static/css/styles.css" />
     <script>
       const boxes = document.querySelectorAll('.box');
       const colors = ['#f94144', '#f8961e', '#f9c74f', '#90be6d'];
@@ -19,7 +19,7 @@
   <body>
     <header>
       <div class="logo-container">
-        <img src="logo.png" alt="Logo" class="logo" />
+        <img src="/static/logo.png" alt="Logo" class="logo" />
         <h1 class="website-name">
           <span class="website-name-main">Project Management Co-Pilot</span><br />
           <span class="website-name-secondary">Powered by AI</span>
@@ -31,12 +31,12 @@
     </header>
 
     <div class="main-container">
-      <aside class="side-panel">
-        <a href="home.html" class="nav-button">Home</a>
-        <a href="analyse.html" class="nav-button">Analyse</a>
-        <a href="translate.html" class="nav-button">Translate</a>
-        <a href="email.html" class="nav-button">Create Email</a>
-      </aside>      
+      <div>
+        <a href="{{ url_for('index') }}" class="nav-button"><i class="bi bi-house-fill"></i>Home</a>
+        <a href="{{ url_for('analyse') }}" class="nav-button"><i class="bi bi-speedometer"></i>Analyse</a>
+        <a href="{{ url_for('translate') }}" class="nav-button"><i class="bi bi-globe"></i>Translate</a>
+        <a href="{{ url_for('email') }}" class="nav-button"><i class="bi bi-envelope-plus-fill"></i>Create Email</a>
+      </div> 
       <main class="main-panel">
         <h2>AI-Powered Personal Document Tool</h2>
         <p>
